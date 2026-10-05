@@ -1,0 +1,23 @@
+[project]
+name = "pdf-qa"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Saikrishna1704", email = "saikrrishreddy@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb>=1.5.9",
+    "langchain-text-splitters>=1.1.3",
+    "openai>=3.24.0",
+    "pymupdf>=1.28.2",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+pdf-qa = "pdf_qa:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
